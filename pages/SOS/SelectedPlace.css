@@ -1,0 +1,91 @@
+.deck{
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+
+    margin-top: 3%;
+    
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+
+}
+
+.leftSide h2{
+    text-align: center;
+}
+
+.leftSide .number{
+    font-size: 2.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    position: relative;
+    bottom: 10%;
+}
+
+.leftSide p {
+    text-align: center;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    width: 25%; 
+}
+
+.rightSide h2{
+    text-align: center;
+}
+
+.verticalLine{
+    height: 200px; 
+    width: 0%;
+
+
+    margin-top: 1.2%;
+
+    border: 0.2px solid #565656;
+}
+
+.spaceThree{
+    margin-top: 2% !important;
+}
+
+.completeInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.modifyText{
+    font-size: 1.5rem ;
+}
+
+.rightEmail{
+    display: flex;
+}
+
+.rightEmail .formBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    align-items: center;
+    width: 100%;
+}
+
+.formBody .email{
+    margin: 5% ;
+}
+
+.formBody .email input{
+    width: 250px;
+}
+

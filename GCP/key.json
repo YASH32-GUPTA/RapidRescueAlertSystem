@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "violence-detection-backend",
+  "private_key_id": "7466b89e3e5167c562f1d24a50a8a68df34cc43c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC2hGDMU2bXZXjx\njj1XS44QubXidxM4hsHTr6I/HxT/+PjndWZQBNGq/fxz0JkGHIXOJFShL6MKL5bE\nMk3jc6uLWGcTzjxDtDMjUhpgWdPqOheCtsUynpsskuvZgWSD2zBIbQXwkmBKSLqM\no6eZLYH6SMMAHVwZYDrrnoTwRO08WCKuBc+w1dQXSIhL7fmP34yeA1N3l4ECG93H\nonJNEFSFwOuHX3fIzfxxCkiQVNiOanHn42WaSfm3heqPf30aYuC/orErAis7f4yR\nkCTAXJ06it4gkUkSh9igehk6aMFXj81NgnFKsqioThFOXN4Ekpvqw86KI/BNwv0z\nsFgKnZbtAgMBAAECggEACwKiWkEfv5ex+5Ryk90NdWnWlJJNWQgcEjqSpY8o86Yf\n0cqtwN8BjPikbZIkYQ+AbOaZKl4Wzkr/o9dLBpEYRKAxG6tBzG3G9fcCe1R/6a3W\ndD61V6/kuYQlcSoSl7e1ynC1PoV+BI0tn8VRm3Z41FHmXY/n2eoJs+QMrffifdTT\nCsSM/hkBRFmMjK0QepMMIORVkWRU7dSsK6R94dVhUbCZB4wAMpBuqYgLuCKBOgw0\nnDBrKE7oiEM5tKBBh1WxoZf94vYcwtF4hV0rfR/x7TNIvWfEh2wRm7zUnpSjeCGz\nVesYjtwyRrJuBVVcv0ooUWwEl/U3l0uESDhCRWnuuwKBgQDxAW+XtvaOV4BIzwdT\nB1QeM0yFz6nlf4I0P1zf4u5bzoVah3ek7d2fNNL0Btezsfu/6DN2CqgtRmzgYGSC\nVc+6iaTCkGob2dXY2wPM0C085dULRbm+MAilduMR919lU7M6gCp2IyYlnQq0oNQP\n7/D9aLDGKC+6BycPkfbP+/VG5wKBgQDB32Eaw1FwuNVNXN+VGxxeAYaQrTZFilTl\nDVQCnCtqYnoJ4jbnP4YfZhC4ql5lOM58nfDs06aJL1tp1VxOGUoT9uHlN7+9NvnP\nwwAyGoFZllLSEMfP1Yo8/Ct7ubYuaWIH7qGKroq47Nkvj38m0Hw3rPOHjwBydnRT\nsvqLOA29CwKBgQDlSwhwv5I0OuvCWbYOOJq/YO8dIEX0IywtqVsjZzSABCy7xMcA\nE48XOZq6sQfn3x41pyXO2LTI3ogXsZ3uotXQE8S9l8hcVxQuDbG/2xAvMDtRTjU5\nzVlsk3/WSBRqwwdyUR4U57wTbSYSVDFuOEp/zmrhHLrLsqJnHehEWOMzYQKBgQCC\n2EcKL/5cDHLxVpgTYwu/KlpudGingFgRivBDHrFyiGoDF6ikY8wajuEEMP+qYy+B\nDXuX6rR/6/VPNU+p6gmD9eC5uelvQ5ZQMTSFnDvmgbz9x5ODYoR86lhSlaEuK7Oc\n1OIz3d8ENd3S6o8PXDApx1FJEStlFSsnfij4IumqxwKBgQCLwIlrp+z4kHnEPkD4\ne6dSd6ZJkv3dVUIWTQziCFXu9A58YIlEDTm2X71ZCqm9hGtiVGRmjaD3hfmqpcq2\na/Sh+SmULlsZ78yMvqUITIJ9PBLBC7JUaWEc7QaNBM2TwO+U/mqtwiZFDeGgiyW6\npIa8pJwpQjxXQ0dDmacD3g+AqA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "violence-detection@violence-detection-backend.iam.gserviceaccount.com",
+  "client_id": "104726513864581951653",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/violence-detection%40violence-detection-backend.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

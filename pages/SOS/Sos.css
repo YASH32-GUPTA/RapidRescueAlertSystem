@@ -1,0 +1,58 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mapBox {
+    width: 80%; /* Set to 80% of the parent width to add margin on the sides */
+    height: 80vh; /* Increase the height to make it vertically long */
+    margin: 0 auto; /* Center the map horizontally */
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for effect */
+  }
+  
+  .placeInfo {
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: large; 
+  }
+  
+  .detailBox {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .customSpace {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline !important;
+
+    margin-left: 2%;
+    font-size: 1.45rem;
+  }
+
+  .customSpace h2{
+    position: relative;
+    margin-top: 0;
+    margin-left: 1%;
+  }
+  
+  .space {
+    margin-top: 4%;
+  }
+
+  .mapSubInfo{
+    display: flex;
+  }
+  
+  .iconExplore{
+    height: 30px !important ; 
+    width: 30px !important;
+  }
+
+  

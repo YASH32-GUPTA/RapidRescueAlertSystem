@@ -1,0 +1,39 @@
+.subHeader{
+    font-size: larger;
+    margin-top: 6%;
+    text-align: center;
+}
+
+.main
+{
+    padding: 0.2%;
+}
+
+.clips-section {
+    margin: 20px 0;
+  }
+  
+  .clips-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .clip-item {
+    margin: 10px;
+  }
+
+  .level
+  {
+    margin: 3%;
+  }
+
+  .info
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .css-110nfzl-MuiButtonBase-root-MuiButton-root {
+  min-width: 120px !important;
+  min-height: 40px !important;
+  }

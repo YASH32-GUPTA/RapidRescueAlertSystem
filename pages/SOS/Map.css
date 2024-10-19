@@ -1,0 +1,26 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Adjust the height as needed */
+  margin: 0 auto;
+  border-radius: 25px;
+  /* Remove position: relative */
+}
+
+
+#map {
+  width: 90%; /* Keep the width as needed */
+  height: 635px; /* Adjust as needed */
+  margin: 0 auto; /* Center the map horizontally */
+  border-radius: 25px;
+  overflow: hidden; /* Hide any overflow */
+}
+

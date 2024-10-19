@@ -1,0 +1,72 @@
+/* Center the form on the page */
+.basic-example-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 89vh;
+  background: linear-gradient(to right, rgba(90, 42, 47, 1) 0%, rgba(45, 30, 35) 25%, #000000 100%);
+  overflow: hidden !important;
+}
+
+.basic-example-form .form-container {
+  width: 500px;
+  padding: 2rem;
+  background: rgba(160, 160, 160, 0.05);
+  border-radius: 8px;
+  height: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+.logo img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+  max-height: 190px; /* Limit the image's height */
+  border-radius: 10px; /* Optional: add rounded corners */
+  object-fit: contain; /* Ensure the image scales nicely */
+}
+
+/* Style the input fields and buttons */
+.group-form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  align-items: center; /* Center items */
+}
+
+.box {
+  width: 100%; /* Ensure boxes take full width */
+  margin-top: 10%;
+}
+
+.basic-example-form .form-label {
+  font-size: 1.5rem; /* Increase font size */
+  font-weight: 200 !important ; /* Make it a bit bolder */
+  margin-right: 5%;
+}
+
+.basic-example-form .form-control {
+  font-size: 1rem; /* Slightly larger font */
+  padding: 0.75rem; /* Increase padding */
+  border-radius: 15px;
+  width: 70%; /* Adjust width */
+}
+
+.btnBox {
+  text-align: center;
+  margin-top: 20px; /* Space above button */
+}
+
+.basic-example-form .btn-primary {
+  font-size: 1.1rem;
+  padding: 0.55rem 1.1rem;
+  width: 150px;
+  border-radius: 10px;
+  margin-top: 10%;
+}

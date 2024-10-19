@@ -1,0 +1,67 @@
+
+.main{
+  padding: 0 !important;
+}
+
+.subHeader{
+  font-size: larger;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.subInfo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+
+.infoBox {
+  font-size: 1.7rem;
+  font-weight: 550;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(1 , 1fr); /* Two columns */
+  grid-template-rows: repeat(2, auto); /* Two rows */
+  
+}
+
+/* Video box layout in normal view */
+.videoBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(2, auto); /* Two rows */
+
+}
+
+.videoBox > div {
+  width: 57%;
+  height: 100%;
+}
+
+/* Maximized view (Ctrl+M) */
+.main.maximized .videoGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Two columns */
+  grid-template-rows: repeat(1  , 1fr); /* Two rows, full height */
+  height: 100vh;
+  width: 100vw;
+}
+
+.main.maximized .videoBox {
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(2, 1fr); /* Two rows for a full-screen grid */
+}
+
+.main.maximized .videoBox > div {
+  width: 100%;
+  height: 50vh;
+}
+
+/* Hide elements in maximized mode */
+.main.maximized .subInfo,
+.main.maximized .hea  derBox,
+.main.maximized .subHeader {
+  display: none;
+}

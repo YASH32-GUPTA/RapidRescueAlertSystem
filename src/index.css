@@ -1,0 +1,54 @@
+body{
+    background: linear-gradient(to right, rgba(90, 42, 47, 1) 0%, rgba(45, 30, 35) 25%, #202020 100%);
+}
+
+
+.font{
+     /* font  */
+     font-family: "Quicksand", sans-serif ;
+     font-optical-sizing: auto;
+     font-style: normal; 
+}
+
+.fontThree{
+    font-weight: 300 !important;
+}
+
+.fontFive{
+    font-weight: 500 !important;
+}
+
+.white{
+    color: #f8f8f8; /* Dark grey color for the text */
+}
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded edges for a smoother look */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovered */
+}
+
+
+/* email */
+.css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root {
+     color: rgba(255, 255, 255, 1) !important;
+}
+
+.MuiTextField-root{
+    border-color: #fff !important;
+}

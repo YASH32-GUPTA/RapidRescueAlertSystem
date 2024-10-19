@@ -1,0 +1,17 @@
+/* Header styling */
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5); /* Pinkish shadow effect */
+  position: relative; /* Remove fixed positioning */
+  z-index: 1000; /* This can remain for layering, but not necessary for a static header */
+}
+
+.header-title {
+  font-size: 3.2rem; 
+  font-weight: 400 !important;
+  color: #f8f8f8; 
+  margin: 0;
+  margin-left: 20px;
+}
