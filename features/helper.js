@@ -6,7 +6,8 @@ let initialState = {
     policeStation : 0 , 
     locationName : '' , 
    }
-    
+   ,
+   refresh : 0 ,
 }
 
 
@@ -23,9 +24,14 @@ const helper =  createSlice({
             state.duration = action.payload ; 
 
         }
+        ,
+        updateContent : (state , action) =>{
+            state.refresh++ ; 
+        }
+        ,
     }  
 })
 
 
-export const{updateDuration,updateInformation} = helper.actions ; 
+export const{updateDuration,updateInformation ,updateContent } = helper.actions ; 
 export default helper.reducer ; 

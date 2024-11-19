@@ -1,6 +1,7 @@
-const express = require('express');
-const multer = require('multer');
-const { Storage } = require('@google-cloud/storage');
+import express from 'express'; // Import express
+import multer from 'multer';   // Import multer
+import { Storage } from '@google-cloud/storage'; // Import Storage from Google Cloud Storage
+
 
 const app = express();
 const storage = new Storage({ keyFilename: 'key.json' });
@@ -9,7 +10,7 @@ const bucket = storage.bucket(bucketName);
 
 const upload = multer();  // Multer handles multipart form data
 
-const cors = require('cors');
+import cors from 'cors'; // Correct way to import cors
 app.use(cors());
 
 

@@ -4,10 +4,16 @@ import { videoLinksOne , videoLinksTwo , videoLinksThree , videoLinksFour } from
 import Footage from '../../component/Footage';
 import './HomeScreen.css';
 
+// component 
+import Button from '@mui/material/Button';
+
+
 
 
 const HomeScreen = () => {
-  const [isMaximized, setIsMaximized] = useState(false);
+  const [isMaximized, setIsMaximized] = useState(true);
+
+  console.log("re-render")
 
   // Keyboard event listener for Ctrl+M and Ctrl+B
   useEffect(() => {
@@ -25,36 +31,36 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <div className={`main font white ${isMaximized ? 'maximized' : ''}`}>
+    <div  className={`main font white ${isMaximized ? 'maximized' : ''}`}>
       <header>
         <div className="headerBox">
           {!isMaximized ?  <Header /> : null }
         </div>
         <div className="subHeader">
-          <h1 style={{fontWeight : 400 }}className="font size">Surveillance Footage</h1>
+          <h1 style={{fontWeight : 400 , fontSize : '2.7rem' }}className="font size">Surveillance Footage</h1>
         </div>
       </header>
 
       {!isMaximized && (
         <div className="subInfo font">
           <div className="infoBox">
-            <p className='fontThree'>Total Camera : 4</p>
+            <p className='fontThree'><Button variant="outlined">Total Camera  &nbsp;<b>:</b>&nbsp;&nbsp;4</Button></p>
           </div>
           <div className="infoBox">
-            <p className='fontThree'>Active Camera : 4</p>
+            <p className='fontThree'><Button variant="outlined">Active Camera  &nbsp;<b>:</b>&nbsp;&nbsp;4</Button></p>
           </div>
           <div className="infoBox">
-            <p className='fontThree'>Active Member : 2</p>
+            <p className='fontThree'><Button variant="outlined">Active Member  &nbsp;<b>:</b>&nbsp;&nbsp;2</Button></p>
           </div>
         </div>
       )}
 
       <div className={`videoGrid ${isMaximized ? 'maximized-grid' : ''}`}>
         <div className="videoBox">
-          <Footage placeName={'PLACE A'} clips={videoLinksOne} criticalViolenceCount={0} isMax = {isMaximized} />
-          <Footage placeName={'PLACE B'} clips={videoLinksTwo} criticalViolenceCount={1} isMax = {isMaximized} />
-          <Footage placeName={'PLACE C'} clips={videoLinksThree} criticalViolenceCount={1} isMax = {isMaximized}/>
-          <Footage placeName={'PLACE D'} clips={videoLinksFour} criticalViolenceCount={1} isMax = {isMaximized}/>
+          <Footage placeName={'CAMERA  1'} clips={videoLinksOne} criticalViolenceCount={4} isMax = {isMaximized} />
+          <Footage placeName={'CAMERA  2'} clips={videoLinksTwo} criticalViolenceCount={4} isMax = {isMaximized} />
+          <Footage placeName={'CAMERA  3'} clips={videoLinksThree} criticalViolenceCount={2} isMax = {isMaximized}/>
+          <Footage placeName={'CAMERA  4'} clips={videoLinksFour} criticalViolenceCount={3} isMax = {isMaximized}/>
         </div>
       </div>
 

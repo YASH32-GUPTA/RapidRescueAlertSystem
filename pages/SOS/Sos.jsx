@@ -59,6 +59,7 @@ const Sos = () => {
           width="750"
           height="480"
           frameBorder="0"
+          allowFullScreen
         ></iframe>
       </div>
     </div>

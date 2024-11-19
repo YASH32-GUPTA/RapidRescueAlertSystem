@@ -26,16 +26,25 @@
 }
 
 .footage-video {
-  width: 100%; /* Full width of the container */
-  height: 100%; /* Full height of the container */
+  width: 99%; /* Full width of the container */
+  height: 98%; /* Full height of the container */
   max-height: none; /* Remove max-height */
   border-radius: 8px;
   object-fit: cover; 
+
+  /* border  */
+  border:5px solid #B0C4DE;
+
 }
 
 .footage-attributes {
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
+}
+
+.footage-attributes button{
+  height: 2.5rem;
+  width: 6.5rem;
 }
 
 .footage-attributes p {

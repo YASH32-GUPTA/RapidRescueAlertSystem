@@ -65,3 +65,17 @@
 .main.maximized .subHeader {
   display: none;
 }
+
+.fontThree button{
+  color: white; 
+  border-color: white; 
+  font-size: large;  
+
+  cursor: not-allowed;
+  height: 3rem;
+  width: 16rem;
+}
+
+.fontThree button:hover {
+  border-color: white; 
+}

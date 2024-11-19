@@ -12,6 +12,11 @@
 .clips-section {
     margin: 20px 0;
   }
+
+.clips-section h1{
+  display: flex;
+  align-items: center;
+}
   
   .clips-list {
     display: flex;
@@ -36,4 +41,15 @@
   .css-110nfzl-MuiButtonBase-root-MuiButton-root {
   min-width: 120px !important;
   min-height: 40px !important;
+  }
+
+  .clip-item iframe{
+    border:3.5px solid #B0C4DE;
+
+  }
+
+  /* for time icon  */
+  .css-1umw9bq-MuiSvgIcon-root {
+    font-size: 2rem !important;
+    margin-right: 2rem;
   }

@@ -12,7 +12,7 @@ async function ReadData() {
       data: video.data // Extract the parsed JSON data
     }));
 
-    console.log("Fetched video data:\n", videoData);
+    // console.log("Fetched video data:\n", videoData);
     return videoData; // Return the video data array
   } catch (err) {
     console.error("Error while reading video data:", err);

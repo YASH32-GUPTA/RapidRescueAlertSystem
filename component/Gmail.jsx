@@ -27,7 +27,7 @@ function Gmail({ lat, lng }) {
         // Create the email data
         const emailData = {
             to_email: formData.to_email, // User email
-            message: `Location URL: ${googleMapUrl}` // Custom message with location
+            message: `Company Name : Sharma Organization \n Location URL: ${googleMapUrl} ` // Custom message with location
         };
 
         // Update the status to processing
@@ -35,7 +35,7 @@ function Gmail({ lat, lng }) {
 
         emailjs
           .send(
-            'violence-alert-system', // Service ID
+            'violence-alert-sos', // Service ID
             'template_a4979tu',      // Template ID
             emailData,               // Email data
             'guiWBCE0WbMLjPCUH'      // User ID (API Key)
@@ -60,21 +60,28 @@ function Gmail({ lat, lng }) {
                     type="submit" 
                     variant="outlined" 
                     color="error" 
-                    style={{ marginTop: '20px' }}
+                    style={{ marginTop: '6px' , height : '2.5rem' , width : '9rem'}}
                 >
                     Send Alert
                 </Button>
                 <TextField
-                    label="Email"
-                    className="email"
-                    name="to_email"
-                    variant="outlined"
-                    type="email"
-                    value={formData.to_email}
-                    onChange={handleChange}
-                    required
-                    InputProps={{ style: { fontSize: 18, padding: '12px' } }}
-                />
+                label="Email"
+                className="email"
+                name="to_email"
+                variant="outlined"
+                type="email"
+                value={formData.to_email}
+                onChange={handleChange}
+                required
+                InputProps={{
+                    style: { fontSize: 18, padding: '12px', borderColor: 'white' },
+                    classes: { notchedOutline: 'custom-outline' }, // Custom class for the outline
+                }}
+                InputLabelProps={{
+                    style: { color: 'white' }, // Optional: Change the label color to white
+                }}
+            />
+
             </form>
             {status && (
                 <div>

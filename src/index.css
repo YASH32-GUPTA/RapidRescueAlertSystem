@@ -52,3 +52,7 @@ body{
 .MuiTextField-root{
     border-color: #fff !important;
 }
+
+.custom-outline {
+    border-color: white !important; /* Use !important to override default styles */
+}

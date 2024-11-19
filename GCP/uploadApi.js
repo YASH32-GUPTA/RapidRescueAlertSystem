@@ -1,6 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-const { Storage } = require('@google-cloud/storage');
+import fs from 'fs'; // Import fs module
+import path from 'path'; // Import path module
+import { Storage } from '@google-cloud/storage'; // Import Storage from Google Cloud Storage
+
 
 const storage = new Storage({ keyFilename: 'key.json' });
 
@@ -10,10 +11,10 @@ const videoDirectory = 'C:/Users/YashGupta/OneDrive/Desktop/U-HACK/sih/Database/
 
 // Predefined custom data array
 const customDataArray = [
-  { place: 'Place A', location: { lat: 12.9716, lng: 77.5946 }, timestamp: '13:00 - 14:00', videoUrl: '' },
-  { place: 'Place B', location: { lat: 13.0827, lng: 80.2707 }, timestamp: '13:00 - 14:00', videoUrl: '' },
-  { place: 'Place C', location: { lat: 17.3850, lng: 78.4867 }, timestamp: '15:00 - 16:00', videoUrl: '' },
-  { place: 'Place D', location: { lat: 19.0760, lng: 72.8777 }, timestamp: '16:00 - 17:00', videoUrl: '' }
+  { place: 'Place A', location: { lat: 12.9716, lng: 77.5946 }, timestamp: '13:00 - 14:00', videoUrl: '' , threshold : '98'},
+  // { place: 'Place B', location: { lat: 13.0827, lng: 80.2707 }, timestamp: '13:00 - 14:00', videoUrl: '' , threshold : '99'},
+  { place: 'Place C', location: { lat: 17.3850, lng: 78.4867 }, timestamp: '15:00 - 16:00', videoUrl: '' , threshold : '98'},
+  { place: 'Place D', location: { lat: 19.0760, lng: 72.8777 }, timestamp: '16:00 - 17:00', videoUrl: '' , threshold : '95'}
 ];
 
 async function uploadVideosAndCreateObjects() {

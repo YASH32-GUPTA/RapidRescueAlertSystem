@@ -1,47 +1,32 @@
-import { ReadData } from "../GCP/Read";
+// customVideo.js
+import { ReadData } from "../GCP/Read.js";
 
 const videoLinksOne = [];
-const videoLinksTwo = [] ;
-const videoLinksThree = [] ;
-const videoLinksFour = [] ;
+const videoLinksTwo = [];
+const videoLinksThree = [];
+const videoLinksFour = [];
 
+async function fetchData() {
+    console.log("fetch start");
 
+    let dataSet = await ReadData();
 
-async function fetchData()
-{   
-    let dataSet = await ReadData() ; 
+    console.log(dataSet) ;
 
-
-    console.log("data" , dataSet ) ;
-
-    dataSet.map((video)=>{
-        if( video.data.place == 'Place A')
-        {   
-            videoLinksOne.unshift(video.data)
+    dataSet.map((video) => {
+        if (video.data.place === 'Place A') {
+            videoLinksOne.unshift(video.data);
+        } if (video.data.place === 'Place B' ) {
+            videoLinksTwo.unshift(video.data);
+        } if (video.data.place === 'Place C') {
+            videoLinksThree.unshift(video.data);
+        } if (video.data.place === 'Place D') {
+            videoLinksFour.unshift(video.data);
         }
-        else if(video.data.place == 'Place B')
-        {
-            videoLinksTwo.unshift(video.data)
-        }
-        else if(video.data.place == 'Place C')
-        {
-            videoLinksThree.unshift(video.data)   
-        }
-        else if(video.data.place == 'Place D')
-        {
-            videoLinksFour.unshift(video.data)
-        }
-    })
+    });
 
-    console.log(videoLinksOne) ;
-    
 }
 
-await fetchData() ; 
+await fetchData();
 
-
-
-
-
-export { videoLinksOne , videoLinksTwo , videoLinksThree , videoLinksFour  };
-  
+export { videoLinksOne, videoLinksTwo, videoLinksThree, videoLinksFour, fetchData };
